@@ -7,6 +7,7 @@ import ArticleDetails from './ArticleDetails';
 // import Signup from './login/Signup';
 import HomePage from './HomePage';
 import StartingPage from './StartingPage';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/article/:id" element={<ArticleDetails />} />
         </Routes>
       </div>
+      <Footer/>
     </ArticleProvider>
   );
 }

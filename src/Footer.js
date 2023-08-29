@@ -1,22 +1,15 @@
-import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+
 
 import "./footer.scss";
 import { Link } from "react-router-dom";
+import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div>
         <ul className="menuItems">
-          <li className="menuItem">
-            <Link to="/profile">Profile</Link>
-          </li>
-          <li className="menuItem">
-            <Link to="/store">Store</Link>
-          </li>
-          <li className="menuItem">
-            <Link to="/cart">Cart</Link>
-          </li>
+         
           <li className="menuItem">
             <Link to="/">Home</Link>
           </li>
@@ -33,7 +26,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaFacebookF />
+              <Facebook/>
             </a>
           </span>
           <span className="icon">
@@ -42,12 +35,12 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaInstagram />
+<Instagram/>
             </a>
           </span>
           <span className="icon">
             <a href="https://github.com/Nileshpataskar" target="_blank" rel="noreferrer">
-              <FaGithub />
+              <Github/>
             </a>
           </span>
           <span className="icon">
@@ -56,7 +49,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin />
+              <Linkedin/>
             </a>
           </span>
         </div>
