@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  position: relative; /* Set a relative position for the container */
+  width: 100%;
+}
+
+.background {
+  background-color: #f5eeee;
+  width: 100%;
+  min-height: 100vh; /* Make sure the container spans the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.siren41 {
+  font-family: "Instrument Serif", serif;
+  font-size: 7rem;
+  color: #333333;
+  margin: 0;
+}
+
+.adlib {
+  font-family: "Tektur", cursive;
+  font-size: 24px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.background2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  padding: 20px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .siren41 {
+  font-size: 3rem;
+  }
+
+  .background {
+    padding: 15px;
+  }
+
+  .adlib {
+    font-size: 18px;
+  }
+
+  .background2 {
+    padding: 15px;
+  }
+}
